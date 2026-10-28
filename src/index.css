@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  letter-spacing: -0.015em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', Pretendard, sans-serif;
+  }
+  .font-junior {
+    font-family: 'Jua', 'Gaegu', Pretendard, sans-serif;
+  }
+  .font-hand {
+    font-family: 'Gaegu', cursive, Pretendard, sans-serif;
+  }
+  /* Modern clean font replacing stiff old serif for 1020 young generation */
+  .font-serif-kr {
+    font-family: Pretendard, -apple-system, system-ui, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Korean Manuscript Grid (원고지) paper background styling - Young, fresh digital style */
+.wongozi-cell {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(14, 165, 233, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Pretendard, -apple-system, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+  background-color: #f8fafc;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+
+.wongozi-cell:nth-child(5n) {
+  border-right-color: rgba(14, 165, 233, 0.45);
+}
+
+.wongozi-cell-active {
+  background-color: #e0f2fe;
+  border-color: #0284c7 !important;
+  color: #0369a1;
+  font-weight: 700;
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 0 0 1px #0284c7;
+}
+
+/* Custom Scrollbar for sleek modern viewports */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

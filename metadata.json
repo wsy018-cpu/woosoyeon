@@ -1,0 +1,8 @@
+{
+  "name": "논술캐스트 (NONSOUL CAST)",
+  "description": "2028학년도 대입 인문·약술형 논술 모의고사 구독, 실전 원고지 에디터, 3분할 AI 첨삭 리포트 및 초·중등 서논술 올인원 플랫폼",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
